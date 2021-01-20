@@ -9,7 +9,7 @@ use learners;
 
 create table  if not exists  subjects(
 sid int not null auto_increment,
-subject varchar(255) not null, 
+subject varchar(255) not null unique, 
 primary key(sid)
 );
 
@@ -25,7 +25,7 @@ primary key(tid)
 
 create table  if not exists  classes(
 cid int not null auto_increment,
-class varchar(255) not null,
+class varchar(255) not null unique,
 primary key(cid)
 );
 
