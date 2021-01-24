@@ -1,0 +1,61 @@
+@charset "ISO-8859-1";
+body
+{
+	font-family:Lucida Sans Unicode;
+	font-weight:normal;
+}
+header
+{
+	font-family:Lucida Sans Unicode;
+	font-weight:normal;
+	font-size:20px;
+}
+.container{
+	padding-left: 4px;
+	padding-right:4px;
+	height:180px;
+	overflow: scroll;
+}
+
+span.a {
+  
+  margin:5px;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  
+
+}
+.sub{
+	display:block;
+	margin:8px;
+	padding:3px;
+	background-color: #e6faff;
+	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+input[type="submit"]
+{
+	text-align:center;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:40%;
+	height:30px;
+	background-color:#00cc44;
+	border:none;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
+}
+ a{
+ text-align:center;
+text-decoration: none;
+display:block;
+border: 1px solid #ff1a1a;
+background-color: #ff1a1a;	
+width:40%;
+margin-left:auto;
+color:white;
+	margin-right:auto;
+	margin-top:10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
