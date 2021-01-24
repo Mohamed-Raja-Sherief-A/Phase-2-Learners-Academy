@@ -39,7 +39,7 @@ public class StudentFilter implements Filter {
 		String cid=request.getParameter("class");
 	    try
 	    {
-		if(name.isBlank()||age.isBlank()||cid.equals("current"))//checks for blank and empty inputs
+		if(name.trim().isEmpty()||age.trim().isEmpty()||cid.equals("current"))//checks for blank and empty inputs
 		{
 			 RequestDispatcher rd=request.getRequestDispatcher("studentForm.jsp");
 			 PrintWriter out=response.getWriter();

@@ -40,7 +40,7 @@ public class RegistrationFilter implements Filter {
 		String password=request.getParameter("password");
 	    try
 	    {
-		if((username.isBlank()||password.isBlank()))
+		if((username.trim().isEmpty()||password.trim().isEmpty()))
 		{
 			RequestDispatcher rd=request.getRequestDispatcher("registration.jsp");
 			request.setAttribute("message", "Enter all credentials");

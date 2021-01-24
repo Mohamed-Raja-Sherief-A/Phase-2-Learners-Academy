@@ -38,7 +38,7 @@ public class LoginFilter implements Filter {
     	String username=request.getParameter("username");
     	String password=request.getParameter("password");
     	System.out.println("in login filter");
-		if(username.isBlank()||password.isBlank()) //checks for blank spaces and empty elements
+		if(username.trim().isEmpty()||password.trim().isEmpty()) //checks for blank spaces and empty elements
     	{
     		 RequestDispatcher rd=request.getRequestDispatcher("index.jsp");
     		 PrintWriter out=response.getWriter();

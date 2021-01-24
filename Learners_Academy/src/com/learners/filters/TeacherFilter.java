@@ -37,7 +37,7 @@ public class TeacherFilter implements Filter {
 		String teacher=request.getParameter("teacher");
 		try
 		{
-			if(teacher.isBlank())//checks for blank and empty inputs
+			if(teacher.trim().isEmpty())//checks for blank and empty inputs
 			{
 				 RequestDispatcher rd=request.getRequestDispatcher("teacherForm.jsp");
 				 PrintWriter out=response.getWriter();

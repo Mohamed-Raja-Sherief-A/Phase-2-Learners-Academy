@@ -37,7 +37,7 @@ public class SubjectFilter implements Filter {
 		String subject=request.getParameter("subject");
 		try
 		{
-		if(subject.isBlank())
+		if(subject.trim().isEmpty())
 		{
 			 RequestDispatcher rd=request.getRequestDispatcher("subjectForm.jsp");
 			 PrintWriter out=response.getWriter();

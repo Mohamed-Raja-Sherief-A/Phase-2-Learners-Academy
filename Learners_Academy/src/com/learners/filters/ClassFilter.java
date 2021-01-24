@@ -38,7 +38,7 @@ public class ClassFilter implements Filter {
 		String name=request.getParameter("class");
 		try
 		{
-		if(name.isBlank())//Checks for empty elements
+		if(name.trim().isEmpty())//Checks for empty elements
 		{
 			RequestDispatcher rd=request.getRequestDispatcher("classForm.jsp");//Error message to display in class form itself
 			PrintWriter out=response.getWriter();
